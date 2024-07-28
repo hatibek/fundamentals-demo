@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+.todo-item p {
+  color: #888;
+  text-decoration: line-through;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
