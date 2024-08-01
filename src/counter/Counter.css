@@ -1,4 +1,4 @@
-.grid-container {
+.main-grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
@@ -6,7 +6,7 @@
   padding: 10px;
 }
 
-.grid-container > div {
+.main-grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
