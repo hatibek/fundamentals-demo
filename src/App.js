@@ -8,7 +8,7 @@ import Calculator from "./calculator/Calculator";
 function App() {
   return (
     <div className="App">
-      {/* <div className="main-grid-container">
+      <div className="main-grid-container">
         <div className="grid-item">
           <TodoList />
         </div>
@@ -22,7 +22,7 @@ function App() {
         <div className="grid-item">E</div>
         <div className="grid-item">F</div>
         <div className="grid-item">G</div>
-      </div> */}
+      </div>
       <Calculator />
     </div>
   );

@@ -63,7 +63,6 @@ const Calculator = () => {
       sign: value,
     });
 
-    console.log("HANDLE SIGN CLICK", calc);
   };
 
   const handleInvert = () => {
