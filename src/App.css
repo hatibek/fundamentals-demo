@@ -27,6 +27,21 @@
 .App-link {
   color: #61dafb;
 }
+.header {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .grid-container {
   display: grid;
