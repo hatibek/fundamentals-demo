@@ -115,7 +115,7 @@ const Calculator = () => {
           return (
             <Button
               key={i}
-              className={btn === "=" ? "equals" : ""}
+              className={btn === "=" ? "equals" : "calculator-button"}
               value={btn}
               onClick={
                 btn === "C"

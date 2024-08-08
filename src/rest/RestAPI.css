@@ -1,0 +1,7 @@
+.rest-api-main-container {
+  display: flex;
+}
+.rest-api-post {
+  display: flex;
+  flex-wrap: wrap;
+}

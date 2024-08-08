@@ -2,8 +2,8 @@ import "./App.css";
 import React from "react";
 import TodoList from "./todoList/TodoList";
 import Counter from "./counter/Counter";
-import Wrapper from "./calculator/Wrapper";
 import Calculator from "./calculator/Calculator";
+import RestAPI from "./rest/RestAPI";
 
 function App() {
   return (
@@ -16,14 +16,12 @@ function App() {
           <Counter />
         </div>
         <div className="grid-item">
-          <Wrapper />
+          <Calculator />
         </div>
-        <div className="grid-item">D</div>
-        <div className="grid-item">E</div>
-        <div className="grid-item">F</div>
-        <div className="grid-item">G</div>
       </div>
-      <Calculator />
+      <div className="grid-item">
+        <RestAPI />
+      </div>
     </div>
   );
 }
