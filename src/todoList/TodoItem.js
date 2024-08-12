@@ -1,4 +1,5 @@
 import React from "react";
+import "./TodoItem.css";
 
 export default function TodoItem({ task, toggleCompleted, deleteTask }) {
   function handleChange() {

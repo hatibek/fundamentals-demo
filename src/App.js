@@ -4,37 +4,20 @@ import TodoList from "./todoList/TodoList";
 import Counter from "./counter/Counter";
 import Calculator from "./calculator/Calculator";
 import RestAPI from "./rest/RestAPI";
-import { Routes, Route, NavLink } from "react-router-dom";
+import Header from "./header/Header";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/todo-list">Todo List</NavLink>
-            </li>
-            <li>
-              <NavLink to="/counter">Counter</NavLink>
-            </li>
-            <li>
-              <NavLink to="/calculator">Calculator</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
+      <Header />
       <div className="main-grid-container">
         <Routes>
           <Route path="/todo-list" element={<TodoList />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/calculator" element={<Calculator />} />
-          <Route path="*" element={<Calculator />} />
+          <Route path="/rest-api" element={<RestAPI />} />
         </Routes>
-      </div>
-      <div className="grid-item">
-        <RestAPI />
       </div>
     </div>
   );

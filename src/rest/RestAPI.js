@@ -12,12 +12,32 @@ const RestAPI = () => {
 
   return (
     <div className="rest-api-main-container">
-      <button onClick={handleGetPosts}>GET POSTS</button>
+      <button className="get-posts-button" onClick={handleGetPosts}>
+        GET POSTS
+      </button>
       {posts.length !== 0 && (
         <div className="rest-api-post">
-          {posts.map((post) => {
-            return <div>{post.id}</div>;
-          })}
+          <table id="customers">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Post</th>
+              </tr>
+            </thead>
+            <tbody>
+              {posts.length !== 0 &&
+                posts.map((post) => {
+                  return (
+                    <tr>
+                      <th>{post.id}</th>
+                      <th>{post.title}</th>
+                      <th>{post.body}</th>
+                    </tr>
+                  );
+                })}
+            </tbody>
+          </table>
         </div>
       )}
     </div>
