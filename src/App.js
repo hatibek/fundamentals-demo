@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="main-grid-container">
+      <div className="container">
         <Routes>
           <Route path="/todo-list" element={<TodoList />} />
           <Route path="/counter" element={<Counter />} />
