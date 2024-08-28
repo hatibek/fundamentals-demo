@@ -7,9 +7,21 @@ export default function TodoItem({ task, toggleCompleted, deleteTask }) {
   }
   return (
     <div className="todo-item">
-      <input type="checkbox" checked={task.completed} onChange={handleChange} />
-      {task.text}
-      <button onClick={() => deleteTask(task.id)}>X</button>
+      <label class="checkbox-container">
+        {task.text}
+        <input type="checkbox" />
+        <span
+          class="checkmark"
+          checked={task.completed}
+          onChange={handleChange}
+        />
+      </label>
+      <button
+        className="delete-task-button"
+        onClick={() => deleteTask(task.id)}
+      >
+        X
+      </button>
     </div>
   );
 }

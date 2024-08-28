@@ -1,6 +1,6 @@
 .calculator-button {
   border: none;
-  background-color: rgb(80, 60, 209);
+  background-color: #70587c;
   font-size: 24px;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -10,14 +10,14 @@
 }
 
 .calculator-button:hover {
-  background-color: rgb(61, 43, 184);
+  background-color: #502f4c;
 }
 
 .equals {
   grid-column: 3 / 5;
-  background-color: rgb(243, 61, 29);
+  background-color: #f2f6d0;
 }
 
 .equals:hover {
-  background-color: rgb(228, 39, 15);
+  background-color: #bee5bf;
 }

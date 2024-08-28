@@ -12,7 +12,7 @@ export default function TodoList() {
 
   function addTask(text) {
     const newTask = {
-      id: Date.now,
+      id: Date.now(),
       text,
       completed: false,
     };
@@ -47,7 +47,9 @@ export default function TodoList() {
         />
       ))}
       <input value={text} onChange={(e) => setText(e.target.value)} />
-      <button onClick={() => addTask(text)}>Add</button>
+      <button className="add-button" onClick={() => addTask(text)}>
+        ADD TASK
+      </button>
     </div>
   );
 }

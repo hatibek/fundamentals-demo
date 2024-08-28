@@ -15,9 +15,10 @@ const RestAPI = () => {
       <button className="get-posts-button" onClick={handleGetPosts}>
         GET POSTS
       </button>
+      
       {posts.length !== 0 && (
         <div className="rest-api-post">
-          <table id="customers">
+          <table id="posts">
             <thead>
               <tr>
                 <th>ID</th>

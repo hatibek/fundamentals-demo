@@ -13,9 +13,15 @@ export default function Counter() {
   };
   return (
     <div className="counter">
-      <div>{count}</div>
-      <button onClick={() => handleClick()}>Counter</button>
-      <button onClick={() => handleReset()}>RESET</button>
+      <div className="count">{count}</div>
+      <div className="buttons">
+        <button className="counter-button" onClick={() => handleClick()}>
+          COUNT
+        </button>
+        <button className="reset-button" onClick={() => handleReset()}>
+          RESET
+        </button>
+      </div>
     </div>
   );
 }
