@@ -50,3 +50,14 @@
 .get-posts-button {
   margin: 14px;
 }
+
+.get-posts-button {
+  margin: 12px;
+  padding: 6px;
+  background-color: #f2f6d0;
+  border-radius: 20px;
+}
+
+.get-posts-button:hover {
+  background-color: #bee5bf;
+}
