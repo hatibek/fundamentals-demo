@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div className="container">
         <Routes>
-          <Route path="/todo-list" element={<TodoList />} />
+          <Route path={["/", "/todo-list"]} element={<TodoList />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/rest-api" element={<RestAPI />} />
