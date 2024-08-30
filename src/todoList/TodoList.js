@@ -10,7 +10,15 @@ export default function TodoList() {
 
   const [text, setText] = useState("");
 
+  function checkEmptyInput() {
+    return text === "" ? true : false;
+  }
   function addTask(text) {
+    if (text === "") {
+      document.getElementsByClassName("error-message")[0].innerText =
+        "Task cannot be empty";
+      return;
+    }
     const newTask = {
       id: Date.now(),
       text,
@@ -50,6 +58,9 @@ export default function TodoList() {
       <button className="add-button" onClick={() => addTask(text)}>
         ADD TASK
       </button>
+      {checkEmptyInput() && (
+        <div className="error-message">Please enter a task</div>
+      )}
     </div>
   );
 }

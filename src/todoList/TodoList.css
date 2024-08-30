@@ -26,3 +26,10 @@ input {
   background-color: #bee5bf;
 }
 
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff7a7a;
+  padding: 6px;
+}
