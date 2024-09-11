@@ -2,10 +2,6 @@
 
 This project is to review the concepts that receive much love in the React technical interviews of different levels. There is a counter, todo list, calculator, and a get request. Currently, I am working on updating the application for more accessibility and responsiveness. I am open to further suggestions on features to implement or review of code quality. 
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
